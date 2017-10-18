@@ -3,6 +3,7 @@
  *	GithubAPI Class for an easy access to some features of the Github API (v3)
  * 	@author staubrein <me@staubrein.com>
  *	@version 1.0
+ *	@example load your repositories /examples/repositories.php
  */
 class GithubAPI {
 
