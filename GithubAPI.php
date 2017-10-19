@@ -24,7 +24,7 @@ class GithubAPI {
 	 * Sets the Path for json caching (and enables it)
 	 * @param path to cache directory
 	 */
-	public function setJSONCachePath(string path) {
+	public function setJSONCachePath($path) {
 
 		$this->_jason_cache_path = path.trim() == '' ? $this->_jason_cache_path : path;
 	}
