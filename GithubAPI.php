@@ -68,7 +68,7 @@ class GithubAPI {
 
 				$this->curl_get(
 					'https://api.github.com/users/' . $this->_username . '/repos', 
-					NULL, 
+					array(), 
 					array(
 						CURLOPT_USERAGENT => $this->_username
 					)
@@ -92,7 +92,7 @@ class GithubAPI {
 	 * @param array $options for cURL 
 	 * @return string 
 	 */ 
-	private function curl_get($url, array $get = NULL, array $options = array()) 
+	private function curl_get($url, $get = array(), $options = array()) 
 	{    
 	    $defaults = array( 
 	        CURLOPT_URL => $url. (strpos($url, '?') === FALSE ? '?' : ''). http_build_query($get), 
